@@ -5,3 +5,102 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor2);
+}
+
+main {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: block;
+    margin: auto;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+}
+
+#formulario {
+    padding: 5px;
+}
+
+#login {
+    max-width: 300px;
+    height: 600px;
+}
+
+#imagem iframe {
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#formulario h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+#inp-login, #inp-pass {
+    position: relative;
+    vertical-align: middle;
+    margin: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--cor2);
+    text-align: center;
+}
+
+#ilogin, #ipass {
+
+    height: 30px;
+    width: max-content;
+    border-radius: 10px;
+}
+
+#l-login, #l-pass {
+    font-size: 2em;
+    color: white;
+}
+
+#btn-form {
+
+}
+
+#btn-login {
+    background-color: var(--cor2);
+    color: white;
+    width: 290px;
+    margin: 5px auto 5px auto;
+    height: 30px;
+    display: block;
+}
+
+#btn-fpass  {
+    box-shadow: none;
+    background-color: var(--cor1);
+    color: white;
+    width: 290px;
+    margin: 5px auto 5px auto;
+    height: 30px;
+    display: block;
+}
+
+
