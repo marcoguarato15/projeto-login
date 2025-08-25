@@ -40,16 +40,26 @@ main {
 }
 
 #formulario {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+#formulario p {
+    text-indent: 2em;
+    text-align: justify;
     padding: 5px;
 }
 
 #login {
-    max-width: 300px;
-    height: 600px;
+    height: fit-content;
 }
 
-#imagem iframe {
+#imagem{
+    height: 250px;
+    background-image: url(../imagens/pattern.jpg);
     border-radius: 10px 10px 0px 0px;
+    background-size: cover;
+    background-position: center center;
 }
 
 div#formulario h1 {
@@ -58,49 +68,63 @@ div#formulario h1 {
 }
 
 #inp-login, #inp-pass {
-    position: relative;
-    vertical-align: middle;
     margin: 5px;
-    padding: 2px;
+    height: fit-content;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--cor2);
-    text-align: center;
+}
+
+.show-left{
+    display: inline-block;
+    padding: 3px;
+}
+
+.show-right {
+    display: inline-block;
+    position: relative;
 }
 
 #ilogin, #ipass {
-
-    height: 30px;
-    width: max-content;
+    position: absolute;
+    height: 32px;
+    top: -32px;
+    left: 0px;
+    width: 230px;
     border-radius: 10px;
 }
 
 #l-login, #l-pass {
+    position: relative;
+    text-align: left;
     font-size: 2em;
     color: white;
 }
 
-#btn-form {
-
-}
-
 #btn-login {
-    background-color: var(--cor2);
-    color: white;
-    width: 290px;
-    margin: 5px auto 5px auto;
-    height: 30px;
-    display: block;
-}
-
-#btn-fpass  {
-    box-shadow: none;
     background-color: var(--cor1);
     color: white;
     width: 290px;
     margin: 5px auto 5px auto;
     height: 30px;
     display: block;
+    border: none;
+    border-radius: 5px;
 }
 
+#btn-fpass  {
+    box-shadow: none;
+    background-color: white;
+    color: var(--cor1);
+    width: 290px;
+    margin: 5px auto 5px auto;
+    height: 30px;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1em;
+}
 
+#btn-fpass::after {
+    content: '&#2709';
+}
