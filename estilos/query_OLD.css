@@ -19,10 +19,10 @@
 
     #login {
         display: inline-block;
-        max-width: none;
         width: 665px;
         height: fit-content;
         padding: 0px;
         height: 100%;
+        transition: 2s;
     }
 }

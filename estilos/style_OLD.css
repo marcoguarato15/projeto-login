@@ -9,6 +9,7 @@
 :root {
     --cor1: #49a09d;
     --cor2: #5f2c82;
+    --cor3: #63e7e3d5;
 }
 
 * {
@@ -123,6 +124,11 @@ div#formulario h1 {
     border: 1px solid gray;
     border-radius: 5px;
     font-size: 1em;
+}
+
+#btn-login:hover ,#btn-fpass:hover {
+    background-color: var(--cor3);
+    cursor: pointer;
 }
 
 #btn-fpass::after {
