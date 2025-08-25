@@ -39,11 +39,15 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
 
     transform: translate(-50%, -50%);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #imagem {
     display: block;
     background: var(--cor2) url(../imagens/pattern.jpg) no-repeat;
+    background-position: center center;
     height: 200px;
     background-size: cover;
 }
@@ -51,4 +55,12 @@ main {
 #formulario {
     display: block;
     padding: 10px;
+}
+
+#formulario h1 {
+    text-align: center;
+}
+
+#formulario p {
+    text-align: justify;
 }
