@@ -22,26 +22,21 @@
                 </p>
                 <form action="login.php" method="post">
 
-                    <div id="inp-login">
-                        <div class="show-left">
+                    <div class="campo">
+                        
                             <label id="l-login" for="ilogin" class="material-symbols-outlined">person</label>
-                        </div>
-                        <div class="show-right">
-                            <input type="text" name="login" id="ilogin" placeholder="Seu usuario">
-                        </div>
+                            <input type="email" name="login" id="ilogin" placeholder="Seu usuario" minlength="5" maxlength="40">
+                        
                     </div>
-                    <div id="inp-pass">
-                        <div class="show-left">
+                    <div class="campo">
+                      
                             <label id="l-pass" for="ipass" class="material-symbols-outlined">vpn_key</label>
-                        </div>
-                        <div class="show-right">
-                            <input type="text" name="pass" id="ipass" placeholder="Sua senha">
-                        </div>
+                            <input type="text" name="pass" id="ipass" placeholder="Sua senha" minlength="8" maxlength="30" required>
+                
                     </div>
-                    <div id="btn-form">
+
                         <input id="btn-login" type="submit" value="Entrar">
-                        <input id="btn-fpass" class="material-symbols-outlined" type="button" value="Esqueci a senha mail">
-                    </div>
+                        <a href="esqueci.php" id="btn-fpass">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
 
                 </form>
             </div>
